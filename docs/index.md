@@ -33,6 +33,9 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 
+# NOTE: Requirement to keep page title
+st.set_page_config(page_title="MkDocs-Stlite")
+
 size = st.slider("Sample size", 100, 1000)
 
 arr = np.random.normal(1, 1, size=size)
